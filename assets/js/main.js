@@ -53,7 +53,7 @@ const sendEmail = (e) => {
     )
     .then(
       () => {
-        contactMessage.textContent = "Message sent successfully";
+        contactMessage.textContent = "Message sent successfully✅";
 
         setTimeout(() => {
           contactMessage.textContent = "";
@@ -62,7 +62,7 @@ const sendEmail = (e) => {
         contactForm.reset();
       },
       () => {
-        contactMessage.textContent = "Message not sent (service error)";
+        contactMessage.textContent = "Message not sent (service error)❌";
       }
     );
 };
@@ -101,4 +101,3 @@ const scrollActive = () => {
   });
 };
 window.addEventListener("scroll", scrollActive);
-/*=============== SCROLL REVEAL ANIMATION ===============*/
